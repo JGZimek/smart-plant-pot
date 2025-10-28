@@ -1,11 +1,56 @@
-# Prerequisites
-*.d
+# Build directories
+build/
+cmake-build-debug/
+cmake-build-release/
+Debug/
+Release/
+
+# CMake
+CMakeLists.txt.user
+CMakeCache.txt
+CMakeFiles/
+Makefile
+cmake_install.cmake
+install_manifest.txt
+*.cmake
+CTestTestfile.cmake
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+*.code-workspace
 
 # Object files
 *.o
 *.ko
 *.obj
 *.elf
+*.a
+*.lib
+*.so
+*.so.*
+*.dylib
+*.dll
+
+# Executables
+*.exe
+*.out
+*.app
+*.i*86
+*.x86_64
+*.hex
+*.bin
+
+# Debug files
+*.dSYM/
+*.su
+*.idb
+*.pdb
+*.dwo
 
 # Linker output
 *.ilk
@@ -16,31 +61,9 @@
 *.gch
 *.pch
 
-# Libraries
-*.lib
-*.a
-*.la
+# Shared objects
 *.lo
-
-# Shared objects (inc. Windows DLLs)
-*.dll
-*.so
-*.so.*
-*.dylib
-
-# Executables
-*.exe
-*.out
-*.app
-*.i*86
-*.x86_64
-*.hex
-
-# Debug files
-*.dSYM/
-*.su
-*.idb
-*.pdb
+*.la
 
 # Kernel Module Compile Results
 *.mod*
@@ -51,5 +74,53 @@ Module.symvers
 Mkfile.old
 dkms.conf
 
-# debug information files
-*.dwo
+# STM32CubeMX
+*.ioc.bak
+*.cproject
+.project
+.cdt
+.settings/
+.ccsproject
+.launches/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+*.egg-info/
+dist/
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Temporary files
+*.tmp
+*.log
+*.bak
+*.orig
+*.swp
+*~
+
+# Visual Studio
+.vs/
+*.user
+*.sln.docstates
+
+# Ninja
+.ninja_deps
+.ninja_log
+
+# Windows
+Thumbs.db
+*.lnk
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Linux
+.directory
